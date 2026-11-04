@@ -1,0 +1,331 @@
+DATA VALIDATION REPORT: are the autonomous vehicle journey files clean and consistent?
+======================================================================================
+
+=== 1. Shape and duplicate columns ===
+(2500, 51)
+city agrees with road file: 100.0% (mismatches: 0)
+road_type agrees with road file: 100.0% (mismatches: 0)
+
+=== 2. Categories (typos / rare values) ===
+
+time_of_day:
+time_of_day
+Daytime         789
+Morning peak    611
+Evening peak    575
+Night           340
+Late night      185
+
+city:
+city
+Bristol       478
+Manchester    442
+Leeds         417
+Birmingham    393
+Newcastle     388
+Cardiff       382
+
+road_segment_id:
+road_segment_id
+SEG-016    103
+SEG-020    103
+SEG-011     95
+SEG-026     94
+SEG-008     94
+SEG-014     94
+SEG-002     93
+SEG-018     90
+SEG-017     90
+SEG-006     89
+SEG-022     88
+SEG-023     88
+SEG-021     87
+SEG-029     86
+SEG-025     84
+SEG-005     83
+SEG-024     82
+SEG-007     82
+SEG-015     80
+SEG-013     80
+SEG-003     79
+SEG-010     78
+SEG-001     76
+SEG-028     75
+SEG-027     74
+SEG-004     73
+SEG-019     71
+SEG-012     69
+SEG-009     62
+SEG-030     58
+
+vehicle_profile_id:
+vehicle_profile_id
+VP-05    273
+VP-09    272
+VP-03    263
+VP-10    257
+VP-02    245
+VP-08    240
+VP-01    240
+VP-07    239
+VP-06    237
+VP-04    234
+
+weather_code:
+weather_code
+W01    1213
+W02     475
+W03     203
+W06     163
+W04     160
+W07     141
+W05      86
+W08      59
+
+road_type:
+road_type
+Motorway        544
+B road          506
+A road          496
+Rural road      486
+Urban street    468
+
+traffic_level:
+traffic_level
+Moderate    1046
+High         838
+Low          616
+
+road_surface:
+road_surface
+Dry             1652
+Wet              678
+Snow-covered      86
+Uneven            84
+
+unexpected_obstacle:
+unexpected_obstacle
+No     2219
+Yes     281
+
+human_intervention:
+human_intervention
+No     2155
+Yes     345
+
+emergency_stop:
+emergency_stop
+No     2414
+Yes      86
+
+safety_incident:
+safety_incident
+No     2468
+Yes      32
+
+journey_completed:
+journey_completed
+Yes    2447
+No       53
+
+problem_occurred:
+problem_occurred
+No     1999
+Yes     501
+
+risk_level:
+risk_level
+Low       1521
+Medium     823
+High       156
+
+vehicle_model:
+vehicle_model
+Nexus City     530
+Vector Plus    506
+Vector One     503
+Aurora B       484
+Aurora A       477
+
+sensor_suite:
+sensor_suite
+Enhanced    1223
+Standard     748
+Advanced     529
+
+weather:
+weather
+Clear          1213
+Light rain      475
+Heavy rain      203
+Strong wind     163
+Fog             160
+Low sun         141
+Snow             86
+Heat alert       59
+
+junction_complexity:
+junction_complexity
+Low       1532
+Medium     500
+High       468
+
+road_markings:
+road_markings
+Good    1430
+Fair     646
+Poor     424
+
+street_lighting:
+street_lighting
+Standard    1532
+Limited      500
+Good         468
+
+digital_infrastructure:
+digital_infrastructure
+Standard    1690
+Enhanced     417
+Limited      393
+
+=== 3. Number ranges ===
+                                 min   mean     max
+distance_km                     3.00  26.34   50.00
+visibility_km                   0.50   9.22   20.00
+planned_time_min                6.00  51.51  151.00
+actual_time_min                 6.00  57.01  164.00
+delay_min                       0.00   5.50   25.00
+sensor_confidence_pct          57.60  85.88   99.00
+sensor_alert_count              0.00   1.99    7.00
+passenger_rating_1to5           1.00   4.24    5.00
+software_version                4.10   4.34    5.00
+lidar_units                     2.00   2.91    4.00
+radar_units                     5.00   6.82    9.00
+camera_units                    8.00   9.82   12.00
+vehicle_age_months              6.00  19.17   36.00
+nominal_sensor_confidence_pct  86.00  89.44   93.00
+risk_multiplier                 1.00   1.18    1.85
+visibility_factor               0.25   0.84    1.00
+sensor_confidence_adjustment  -15.00  -2.41    2.00
+speed_limit_mph                30.00  50.65   70.00
+problem_occurred_flag           0.00   0.20    1.00
+human_intervention_flag         0.00   0.14    1.00
+emergency_stop_flag             0.00   0.03    1.00
+safety_incident_flag            0.00   0.01    1.00
+journey_completed_flag          0.00   0.98    1.00
+unexpected_obstacle_flag        0.00   0.11    1.00
+confidence_gap                -30.20  -3.56    7.00
+
+=== 4. Logic checks (all should be 0) ===
+Not completed but no problem: 0
+Intervention/e-stop/incident but no problem: 0
+Safety incident but not Yes in problem: 0
+Confidence outside 0-100: 0
+Negative delay: 0
+Dates: 2026-01-01 to 2026-06-30
+
+=== 5. Events vs journey flags ===
+has_event  False  True 
+flagged                
+False       2123      0
+True           0    377
+Max events per journey: 1
+
+=== 6. Group sizes (small groups = cautious conclusions) ===
+
+weather:
+weather
+Heat alert       59
+Snow             86
+Low sun         141
+Fog             160
+Strong wind     163
+Heavy rain      203
+Light rain      475
+Clear          1213
+
+sensor_suite:
+sensor_suite
+Advanced     529
+Standard     748
+Enhanced    1223
+
+software_version:
+software_version
+5.0    474
+4.3    502
+4.2    739
+4.1    785
+
+city:
+city
+Cardiff       382
+Newcastle     388
+Birmingham    393
+Leeds         417
+Manchester    442
+Bristol       478
+
+road_type:
+road_type
+Urban street    468
+Rural road      486
+A road          496
+B road          506
+Motorway        544
+
+time_of_day:
+time_of_day
+Late night      185
+Night           340
+Evening peak    575
+Morning peak    611
+Daytime         789
+
+traffic_level:
+traffic_level
+Low          616
+High         838
+Moderate    1046
+
+=== 7. Journeys per road segment ===
+count     30.0
+mean      83.3
+std       10.8
+min       58.0
+25%       76.5
+50%       83.5
+75%       90.0
+max      103.0
+
+=== 8. Road feature group sizes ===
+
+junction_complexity:
+junction_complexity
+High       468
+Low       1532
+Medium     500
+
+road_markings:
+road_markings
+Fair     646
+Good    1430
+Poor     424
+
+street_lighting:
+street_lighting
+Good         468
+Limited      500
+Standard    1532
+
+digital_infrastructure:
+digital_infrastructure
+Enhanced     417
+Limited      393
+Standard    1690
+
+=== 9. Segments per road feature (30 segments in total) ===
+junction_complexity: {'Low': 18, 'Medium': 6, 'High': 6}
+road_markings: {'Good': 17, 'Fair': 8, 'Poor': 5}
+street_lighting: {'Standard': 18, 'Limited': 6, 'Good': 6}
+digital_infrastructure: {'Standard': 20, 'Limited': 5, 'Enhanced': 5}

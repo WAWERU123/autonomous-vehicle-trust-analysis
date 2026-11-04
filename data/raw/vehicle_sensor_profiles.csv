@@ -1,0 +1,11 @@
+vehicle_profile_id,vehicle_model,software_version,sensor_suite,lidar_units,radar_units,camera_units,vehicle_age_months,nominal_sensor_confidence_pct
+VP-01,Aurora A,4.1,Standard,2,5,8,6,86
+VP-02,Aurora B,4.2,Standard,2,5,8,11,86
+VP-03,Vector One,4.3,Standard,2,5,8,16,86
+VP-04,Vector Plus,5.0,Enhanced,3,7,10,21,90
+VP-05,Nexus City,4.1,Enhanced,3,7,10,26,90
+VP-06,Aurora A,4.2,Enhanced,3,7,10,31,90
+VP-07,Aurora B,4.3,Enhanced,3,7,10,36,90
+VP-08,Vector One,5.0,Enhanced,3,7,10,10,90
+VP-09,Vector Plus,4.1,Advanced,4,9,12,15,93
+VP-10,Nexus City,4.2,Advanced,4,9,12,20,93

@@ -1,0 +1,174 @@
+MODEL EVALUATION REPORT: can we predict which autonomous journeys will have a problem?
+======================================================================================
+
+Journeys: 2500 | problems: 501 (20.0%) | train: 2000 | test: 500 | stratified 80/20 split, random_state=42
+Pre-journey features (36 after encoding): distance_km, visibility_km, traffic_level, road_surface, road_type, time_of_day, weather, sensor_suite, software_version, vehicle_age_months, nominal_sensor_confidence_pct, junction_complexity, road_markings, street_lighting, digital_infrastructure, speed_limit_mph
+In-journey adds: sensor_confidence_pct, sensor_alert_count, unexpected_obstacle
+Excluded as leakage (they describe what happened): human_intervention; emergency_stop; safety_incident; journey_completed; passenger_rating_1to5; delay_min; actual_time_min; risk_level; risk_multiplier / visibility_factor / sensor_confidence_adjustment (derived from weather)
+
+=== 1. Test-set results (500 unseen journeys) ===
+   features                          model  accuracy  precision  recall    f1   auc
+Pre-journey Baseline (always 'no problem')     0.800      0.000    0.00 0.000   NaN
+Pre-journey            Logistic regression     0.814      1.000    0.07 0.131 0.611
+Pre-journey        Decision tree (depth 4)     0.792      0.250    0.02 0.037 0.547
+ In-journey Baseline (always 'no problem')     0.800      0.000    0.00 0.000   NaN
+ In-journey            Logistic regression     0.966      0.911    0.92 0.915 0.994
+ In-journey        Decision tree (depth 4)     0.972      0.957    0.90 0.928 0.976
+
+A model that always says 'no problem' is already 80.0% accurate, so accuracy alone is not evidence of skill. Compare recall and precision.
+
+=== 2. Confusion matrices (rows = actual, columns = predicted) ===
+
+Pre-journey | Logistic regression
+  true negatives 400 | false alarms 0 | missed problems 93 | caught problems 7
+
+In-journey | Logistic regression
+  true negatives 391 | false alarms 9 | missed problems 8 | caught problems 92
+
+In-journey | Decision tree (depth 4)
+  true negatives 396 | false alarms 4 | missed problems 10 | caught problems 90
+
+=== 3. Stability check: 5-fold cross-validation on the training data ===
+Pre-journey  | Logistic regression      | F1 per fold: mean 0.045, std 0.019, range 0.024-0.067
+Pre-journey  | Decision tree (depth 4)  | F1 per fold: mean 0.094, std 0.037, range 0.024-0.130
+In-journey   | Logistic regression      | F1 per fold: mean 0.874, std 0.018, range 0.861-0.909
+In-journey   | Decision tree (depth 4)  | F1 per fold: mean 0.862, std 0.025, range 0.830-0.905
+
+=== 4. Operating point: how many problems do we catch vs false alarms we accept? ===
+ threshold  recall  precision  caught  missed  false_alarms
+       0.5    0.92      0.911      92       8             9
+       0.4    0.92      0.911      92       8             9
+       0.3    0.97      0.858      97       3            16
+       0.2    0.99      0.773      99       1            29
+       0.1    0.99      0.664      99       1            50
+
+Same trade-off estimated from the training data only (5-fold cross-validation, no test-set peeking):
+ threshold  recall  precision  false_alarm_rate
+       0.5   0.833      0.920             0.018
+       0.4   0.863      0.874             0.031
+       0.3   0.895      0.833             0.045
+       0.2   0.938      0.758             0.075
+       0.1   0.970      0.649             0.131
+
+=== 5. Simple rule an operator could use: 'escalate to a human at N or more alerts' ===
+       rule  recall  precision  caught  missed  false_alarms
+>= 2 alerts    0.99      0.340      99       1           192
+>= 3 alerts    0.93      0.612      93       7            59
+>= 4 alerts    0.64      0.853      64      36            11
+
+=== 6. Logistic regression: strongest drivers (standardised coefficients) ===
+Positive = raises the chance of a problem. Features are scaled, so sizes are comparable.
+sensor_alert_count                 6.65
+sensor_confidence_pct              3.74
+road_markings_Good                 0.42
+traffic_level_Low                 -0.38
+digital_infrastructure_Standard   -0.31
+road_type_Motorway                -0.20
+time_of_day_Morning peak           0.17
+road_surface_Snow-covered          0.16
+weather_Snow                       0.16
+road_markings_Poor                 0.15
+time_of_day_Evening peak           0.14
+nominal_sensor_confidence_pct     -0.13
+
+=== 7. Decision tree rules (readable by a non-technical reviewer) ===
+|--- sensor_alert_count <= 3.50
+|   |--- sensor_alert_count <= 2.50
+|   |   |--- sensor_alert_count <= 1.50
+|   |   |   |--- unexpected_obstacle_Yes <= 0.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- unexpected_obstacle_Yes >  0.50
+|   |   |   |   |--- class: 0
+|   |   |--- sensor_alert_count >  1.50
+|   |   |   |--- sensor_confidence_pct <= 93.15
+|   |   |   |   |--- class: 0
+|   |   |   |--- sensor_confidence_pct >  93.15
+|   |   |   |   |--- class: 1
+|   |--- sensor_alert_count >  2.50
+|   |   |--- sensor_confidence_pct <= 86.20
+|   |   |   |--- sensor_confidence_pct <= 80.05
+|   |   |   |   |--- class: 0
+|   |   |   |--- sensor_confidence_pct >  80.05
+|   |   |   |   |--- class: 0
+|   |   |--- sensor_confidence_pct >  86.20
+|   |   |   |--- weather_Heavy rain <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- weather_Heavy rain >  0.50
+|   |   |   |   |--- class: 0
+|--- sensor_alert_count >  3.50
+|   |--- sensor_confidence_pct <= 74.45
+|   |   |--- sensor_alert_count <= 4.50
+|   |   |   |--- sensor_confidence_pct <= 70.05
+|   |   |   |   |--- class: 0
+|   |   |   |--- sensor_confidence_pct >  70.05
+|   |   |   |   |--- class: 0
+|   |   |--- sensor_alert_count >  4.50
+|   |   |   |--- sensor_confidence_pct <= 60.85
+|   |   |   |   |--- class: 0
+|   |   |   |--- sensor_confidence_pct >  60.85
+|   |   |   |   |--- class: 1
+|   |--- sensor_confidence_pct >  74.45
+|   |   |--- sensor_confidence_pct <= 76.75
+|   |   |   |--- sensor_confidence_pct <= 76.65
+|   |   |   |   |--- class: 1
+|   |   |   |--- sensor_confidence_pct >  76.65
+|   |   |   |   |--- class: 0
+|   |   |--- sensor_confidence_pct >  76.75
+|   |   |   |--- class: 1
+
+
+=== 8. Sensitivity: does the result change without the red-flagged journeys? ===
+                       run  accuracy  precision  recall    f1   auc
+              All journeys     0.966      0.911   0.920 0.915 0.994
+Without 9 flagged journeys     0.968      0.926   0.906 0.916 0.993
+
+=== 9. Error rates by group (out-of-fold predictions on ALL journeys, in-journey logistic) ===
+miss_rate = real problems the model failed to flag | false_alarm_rate = trouble-free journeys it flagged
+Overall, all 2500 journeys, 5-fold cross-validated: accuracy 0.952, precision 0.923, recall 0.832, F1 0.875 (a steadier estimate than the single 500-journey test split)
+Rule '3 or more alerts' on all 2500 journeys: recall 0.878, precision 0.589, false alarms 307
+
+By weather:
+                n  problems  miss_rate  false_alarm_rate
+weather                                                 
+Clear        1213       190      0.205             0.012
+Fog           160        52      0.135             0.037
+Heat alert     59        13      0.154             0.022
+Heavy rain    203        56      0.125             0.034
+Light rain    475        85      0.141             0.013
+Low sun       141        37      0.135             0.019
+Snow           86        41      0.146             0.089
+Strong wind   163        27      0.222             0.015
+
+By sensor_suite:
+                 n  problems  miss_rate  false_alarm_rate
+sensor_suite                                             
+Advanced       529        90      0.167             0.016
+Enhanced      1223       234      0.171             0.014
+Standard       748       177      0.164             0.025
+
+By city:
+              n  problems  miss_rate  false_alarm_rate
+city                                                  
+Birmingham  393        95      0.126             0.020
+Bristol     478        81      0.235             0.018
+Cardiff     382        72      0.208             0.016
+Leeds       417        97      0.155             0.022
+Manchester  442        80      0.150             0.014
+Newcastle   388        76      0.145             0.016
+
+By road_type:
+                n  problems  miss_rate  false_alarm_rate
+road_type                                               
+A road        496        85      0.141             0.022
+B road        506       105      0.219             0.017
+Motorway      544       100      0.160             0.011
+Rural road    486       106      0.151             0.016
+Urban street  468       105      0.162             0.022
+
+Caution: some groups have few problems (see the problems column), so rates there are rough.
+
+=== 10. Honest limitations ===
+- Data is synthetic and observational: patterns are associations, not causes.
+- problem_occurred appears strongly tied to alert count and sensor confidence, so the in-journey model partly recovers how the target was built. It detects trouble as it happens; it does not forecast it.
+- Before departure the model barely beats the baseline: conditions alone do not predict problems well.
+- Small groups (snow, heat alert, fog) give uncertain error rates. No passenger attributes exist, so fairness across passenger groups cannot be tested.

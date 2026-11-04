@@ -1,0 +1,31 @@
+road_segment_id,city,road_type,speed_limit_mph,junction_complexity,road_markings,street_lighting,digital_infrastructure
+SEG-001,Birmingham,Motorway,70,Medium,Poor,Limited,Limited
+SEG-002,Bristol,A road,60,Low,Good,Standard,Standard
+SEG-003,Cardiff,B road,50,Low,Good,Standard,Standard
+SEG-004,Leeds,Urban street,30,High,Fair,Good,Enhanced
+SEG-005,Manchester,Rural road,40,Medium,Good,Limited,Standard
+SEG-006,Newcastle,Motorway,70,Low,Good,Standard,Standard
+SEG-007,Birmingham,A road,60,Low,Fair,Standard,Limited
+SEG-008,Bristol,B road,50,Low,Poor,Standard,Standard
+SEG-009,Cardiff,Urban street,30,High,Good,Good,Standard
+SEG-010,Leeds,Rural road,40,Low,Fair,Standard,Enhanced
+SEG-011,Manchester,Motorway,70,Low,Good,Standard,Standard
+SEG-012,Newcastle,A road,60,Low,Good,Standard,Standard
+SEG-013,Birmingham,B road,50,Medium,Fair,Limited,Limited
+SEG-014,Bristol,Urban street,30,High,Good,Good,Standard
+SEG-015,Cardiff,Rural road,40,Low,Poor,Standard,Standard
+SEG-016,Leeds,Motorway,70,Low,Fair,Standard,Enhanced
+SEG-017,Manchester,A road,60,Medium,Good,Limited,Standard
+SEG-018,Newcastle,B road,50,Low,Good,Standard,Standard
+SEG-019,Birmingham,Urban street,30,High,Fair,Good,Limited
+SEG-020,Bristol,Rural road,40,Low,Good,Standard,Standard
+SEG-021,Cardiff,Motorway,70,Medium,Good,Limited,Standard
+SEG-022,Leeds,A road,60,Low,Poor,Standard,Enhanced
+SEG-023,Manchester,B road,50,Low,Good,Standard,Standard
+SEG-024,Newcastle,Urban street,30,High,Good,Good,Standard
+SEG-025,Birmingham,Rural road,40,Medium,Fair,Limited,Limited
+SEG-026,Bristol,Motorway,70,Low,Good,Standard,Standard
+SEG-027,Cardiff,A road,60,Low,Good,Standard,Standard
+SEG-028,Leeds,B road,50,Low,Fair,Standard,Enhanced
+SEG-029,Manchester,Urban street,30,High,Poor,Good,Standard
+SEG-030,Newcastle,Rural road,40,Low,Good,Standard,Standard

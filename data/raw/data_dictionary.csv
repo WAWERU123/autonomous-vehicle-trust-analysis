@@ -1,0 +1,26 @@
+field,description,data_type,dataset
+journey_id,Unique journey identifier,Text,Main
+journey_date,Date of journey,Date,Main
+time_of_day,Journey time band,Category,Main
+city,Nearest study city,Category,Main
+road_segment_id,Join key for road_environment_factors.csv,Text,Main
+vehicle_profile_id,Join key for vehicle_sensor_profiles.csv,Text,Main
+weather_code,Join key for weather_risk_factors.csv,Text,Main
+road_type,Road category,Category,Main
+distance_km,Journey distance in kilometres,Decimal,Main
+traffic_level,Observed traffic level,Category,Main
+road_surface,Road surface condition,Category,Main
+visibility_km,Estimated visibility in kilometres,Decimal,Main
+planned_time_min,Planned journey duration,Integer,Main
+actual_time_min,Actual journey duration,Integer,Main
+delay_min,Actual minus planned duration,Integer,Main
+sensor_confidence_pct,Overall sensor confidence percentage,Decimal,Main
+sensor_alert_count,Number of sensor alerts,Integer,Main
+unexpected_obstacle,Whether an unexpected obstacle was detected,Yes/No,Main
+human_intervention,Whether a person took or requested control,Yes/No,Main
+emergency_stop,Whether the vehicle made an emergency stop,Yes/No,Main
+safety_incident,Whether a safety incident was recorded,Yes/No,Main
+journey_completed,Whether the journey reached its destination,Yes/No,Main
+passenger_rating_1to5,Passenger rating from 1 to 5,Integer,Main
+problem_occurred,Beginner prediction target; any material performance problem,Yes/No,Main
+risk_level,Extension target derived from journey risk indicators,Category,Main

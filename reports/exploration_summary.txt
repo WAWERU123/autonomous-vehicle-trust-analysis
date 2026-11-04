@@ -1,0 +1,79 @@
+EXPLORATION SUMMARY: where does the autonomous ride break down, and what warns us?
+==================================================================================
+
+1. Problem rate by weather
+             problems     n   rate     lo     hi
+weather                                         
+Clear             190  1213  0.157  0.137  0.178
+Strong wind        27   163  0.166  0.116  0.230
+Light rain         85   475  0.179  0.147  0.216
+Heat alert         13    59  0.220  0.134  0.341
+Low sun            37   141  0.262  0.197  0.341
+Heavy rain         56   203  0.276  0.219  0.341
+Fog                52   160  0.325  0.257  0.401
+Snow               41    86  0.477  0.374  0.581
+
+2. Mean sensor confidence gap vs nominal (points)
+weather
+Snow          -21.3
+Fog           -14.0
+Heavy rain    -11.0
+Low sun        -6.8
+Strong wind    -5.1
+Light rain     -3.9
+Heat alert     -2.0
+Clear           0.9
+
+3. Problem rate by weather x suite
+sensor_suite  Standard  Enhanced  Advanced
+weather                                   
+Clear            0.180     0.156     0.126
+Light rain       0.230     0.166     0.135
+Strong wind      0.200     0.153     0.152
+Low sun          0.250     0.308     0.194
+Heavy rain       0.411     0.214     0.245
+Fog              0.321     0.323     0.333
+Snow             0.536     0.488     0.333
+
+Counts
+sensor_suite  Standard  Enhanced  Advanced
+weather                                   
+Clear              362       589       262
+Light rain         139       247        89
+Strong wind         45        85        33
+Low sun             40        65        36
+Heavy rain          56        98        49
+Fog                 56        65        39
+Snow                28        43        15
+
+4. Problem rate by sensor alert count
+            problems    n   rate     lo     hi
+alert_band                                    
+0                  0  296  0.000  0.000  0.013
+1                  2  724  0.003  0.001  0.010
+2                 59  733  0.080  0.063  0.102
+3                131  385  0.340  0.295  0.389
+4+               309  362  0.854  0.813  0.886
+
+5. Events by type and severity
+severity            Low  Medium  High
+event_type                           
+Safety incident       0       0    32
+Emergency stop        0      79     0
+Human intervention  252      14     0
+
+Share of journeys completed after the event
+event_type
+Emergency stop        0.620
+Human intervention    1.000
+Safety incident       0.281
+
+All journeys completed: 0.979 | Journeys with an event completed: 0.859
+
+6. Passenger rating by delay band
+            mean  count
+delay_band             
+0 min       5.00    245
+1-5         4.69   1345
+6-10        4.06    521
+11+         2.47    389

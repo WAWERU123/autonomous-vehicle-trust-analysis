@@ -1,0 +1,62 @@
+EVENTS ANALYSIS SUMMARY: does the system fail safely? (interventions, stops, incidents)
+=======================================================================================
+
+7. Funnel
+All journeys: 2500 (100.0%)
+Any event (intervention, stop or incident): 377 (15.1%)
+Emergency stop or safety incident: 111 (4.4%)
+Journey not completed: 53 (2.1%)
+Safety incident: 32 (1.3%)
+Event outcome matches journey_completed flag: 100.0%
+
+8. Events per 100 journeys by weather
+event_type   Human intervention  Emergency stop  Safety incident
+weather                                                         
+Clear                       7.8             2.8              1.1
+Strong wind                11.0             1.8              2.5
+Light rain                 10.7             2.5              0.2
+Heat alert                 11.9             1.7              5.1
+Low sun                    10.6             4.3              1.4
+Heavy rain                 14.8             3.4              2.0
+Fog                        20.0             5.0              0.0
+Snow                       20.9             9.3              5.8
+
+Journeys per weather
+weather
+Clear          1213
+Strong wind     163
+Light rain      475
+Heat alert       59
+Low sun         141
+Heavy rain      203
+Fog             160
+Snow             86
+
+Event counts
+event_type   Emergency stop  Human intervention  Safety incident
+weather                                                         
+Clear                    34                  95               13
+Strong wind               3                  18                4
+Light rain               12                  51                1
+Heat alert                1                   7                3
+Low sun                   6                  15                2
+Heavy rain                7                  30                4
+Fog                       8                  32                0
+Snow                      8                  18                5
+
+9. Human intervention reasons by weather
+weather                     Clear  Strong wind  Light rain  Heat alert  Low sun  Heavy rain  Fog  Snow
+event_reason                                                                                          
+Precautionary intervention     39            9          27           4        9          11    5     1
+Complex traffic                35            4          14           3        5           5    6     0
+Low sensor confidence           0            1           0           0        0           9   18    17
+Unexpected obstacle            21            4          10           0        1           5    3     0
+
+Totals
+event_reason
+Precautionary intervention    105
+Complex traffic                72
+Low sensor confidence          45
+Unexpected obstacle            44
+
+Low sensor confidence events in fog, snow or heavy rain: 98% of 45

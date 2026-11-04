@@ -1,0 +1,12 @@
+# Environment and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+
+# Challenge instruction material (not mine to publish)
+docs/
+data/raw/README.txt
+
+# Rebuilt by src/01_load_join.py
+data/processed/

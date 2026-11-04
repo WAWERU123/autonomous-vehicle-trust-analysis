@@ -1,0 +1,378 @@
+event_id,journey_id,event_type,event_reason,severity,response_action,outcome
+EVT-0001,AVJ-00003,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0002,AVJ-00007,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0003,AVJ-00008,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0004,AVJ-00017,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0005,AVJ-00019,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0006,AVJ-00033,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0007,AVJ-00039,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0008,AVJ-00041,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0009,AVJ-00043,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0010,AVJ-00049,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0011,AVJ-00063,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0012,AVJ-00076,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0013,AVJ-00078,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0014,AVJ-00084,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0015,AVJ-00086,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0016,AVJ-00104,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0017,AVJ-00124,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0018,AVJ-00160,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0019,AVJ-00170,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0020,AVJ-00196,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0021,AVJ-00206,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0022,AVJ-00215,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0023,AVJ-00217,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0024,AVJ-00221,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0025,AVJ-00227,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0026,AVJ-00229,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0027,AVJ-00230,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0028,AVJ-00246,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0029,AVJ-00251,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0030,AVJ-00258,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0031,AVJ-00259,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0032,AVJ-00262,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0033,AVJ-00264,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0034,AVJ-00269,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0035,AVJ-00273,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0036,AVJ-00277,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0037,AVJ-00278,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0038,AVJ-00280,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0039,AVJ-00282,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0040,AVJ-00284,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0041,AVJ-00286,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0042,AVJ-00288,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0043,AVJ-00299,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0044,AVJ-00305,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0045,AVJ-00306,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0046,AVJ-00307,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0047,AVJ-00308,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0048,AVJ-00318,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0049,AVJ-00350,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0050,AVJ-00356,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0051,AVJ-00374,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0052,AVJ-00375,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0053,AVJ-00377,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0054,AVJ-00384,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0055,AVJ-00396,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0056,AVJ-00402,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0057,AVJ-00405,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0058,AVJ-00410,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0059,AVJ-00414,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0060,AVJ-00422,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0061,AVJ-00425,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0062,AVJ-00427,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0063,AVJ-00432,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0064,AVJ-00436,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0065,AVJ-00438,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0066,AVJ-00439,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0067,AVJ-00442,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0068,AVJ-00446,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0069,AVJ-00470,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0070,AVJ-00482,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0071,AVJ-00483,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0072,AVJ-00487,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0073,AVJ-00500,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0074,AVJ-00509,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0075,AVJ-00513,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0076,AVJ-00514,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0077,AVJ-00531,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0078,AVJ-00534,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0079,AVJ-00539,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0080,AVJ-00540,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0081,AVJ-00558,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0082,AVJ-00563,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0083,AVJ-00568,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0084,AVJ-00580,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0085,AVJ-00581,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0086,AVJ-00586,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0087,AVJ-00588,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0088,AVJ-00599,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0089,AVJ-00601,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0090,AVJ-00602,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0091,AVJ-00613,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0092,AVJ-00616,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0093,AVJ-00629,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0094,AVJ-00633,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0095,AVJ-00634,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0096,AVJ-00645,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0097,AVJ-00646,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0098,AVJ-00647,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0099,AVJ-00653,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0100,AVJ-00662,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0101,AVJ-00681,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0102,AVJ-00693,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0103,AVJ-00695,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0104,AVJ-00701,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0105,AVJ-00704,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0106,AVJ-00705,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0107,AVJ-00711,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0108,AVJ-00713,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0109,AVJ-00715,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0110,AVJ-00751,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0111,AVJ-00758,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0112,AVJ-00762,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0113,AVJ-00765,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0114,AVJ-00779,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0115,AVJ-00780,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0116,AVJ-00784,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0117,AVJ-00790,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0118,AVJ-00803,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0119,AVJ-00808,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0120,AVJ-00810,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0121,AVJ-00811,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0122,AVJ-00812,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0123,AVJ-00819,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0124,AVJ-00823,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0125,AVJ-00833,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0126,AVJ-00844,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0127,AVJ-00846,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0128,AVJ-00857,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0129,AVJ-00859,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0130,AVJ-00860,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0131,AVJ-00865,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0132,AVJ-00869,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0133,AVJ-00876,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0134,AVJ-00877,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0135,AVJ-00881,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0136,AVJ-00901,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0137,AVJ-00907,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0138,AVJ-00909,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0139,AVJ-00912,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0140,AVJ-00918,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0141,AVJ-00922,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0142,AVJ-00926,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0143,AVJ-00936,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0144,AVJ-00941,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0145,AVJ-00942,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0146,AVJ-00951,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0147,AVJ-00954,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0148,AVJ-00956,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0149,AVJ-00957,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0150,AVJ-00959,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0151,AVJ-00963,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0152,AVJ-00983,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0153,AVJ-00986,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0154,AVJ-00990,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0155,AVJ-00991,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0156,AVJ-00994,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0157,AVJ-00999,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0158,AVJ-01002,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0159,AVJ-01003,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0160,AVJ-01013,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0161,AVJ-01015,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0162,AVJ-01027,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0163,AVJ-01041,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0164,AVJ-01047,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0165,AVJ-01057,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0166,AVJ-01079,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0167,AVJ-01080,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0168,AVJ-01086,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0169,AVJ-01087,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0170,AVJ-01090,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0171,AVJ-01111,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0172,AVJ-01118,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0173,AVJ-01140,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0174,AVJ-01141,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0175,AVJ-01152,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0176,AVJ-01156,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0177,AVJ-01157,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0178,AVJ-01162,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0179,AVJ-01164,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0180,AVJ-01170,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0181,AVJ-01179,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0182,AVJ-01192,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0183,AVJ-01196,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0184,AVJ-01207,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0185,AVJ-01228,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0186,AVJ-01235,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0187,AVJ-01238,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0188,AVJ-01269,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0189,AVJ-01274,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0190,AVJ-01275,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0191,AVJ-01285,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0192,AVJ-01286,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0193,AVJ-01288,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0194,AVJ-01290,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0195,AVJ-01292,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0196,AVJ-01302,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0197,AVJ-01309,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0198,AVJ-01318,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0199,AVJ-01320,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0200,AVJ-01343,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0201,AVJ-01344,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0202,AVJ-01350,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0203,AVJ-01351,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0204,AVJ-01353,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0205,AVJ-01367,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0206,AVJ-01371,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0207,AVJ-01376,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0208,AVJ-01384,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0209,AVJ-01385,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0210,AVJ-01387,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0211,AVJ-01415,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0212,AVJ-01421,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0213,AVJ-01423,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0214,AVJ-01424,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0215,AVJ-01426,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0216,AVJ-01432,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0217,AVJ-01442,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0218,AVJ-01448,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0219,AVJ-01451,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0220,AVJ-01455,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0221,AVJ-01459,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0222,AVJ-01487,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0223,AVJ-01490,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0224,AVJ-01491,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0225,AVJ-01495,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0226,AVJ-01506,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0227,AVJ-01507,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0228,AVJ-01510,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0229,AVJ-01512,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0230,AVJ-01513,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0231,AVJ-01519,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0232,AVJ-01537,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0233,AVJ-01542,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0234,AVJ-01543,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0235,AVJ-01551,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0236,AVJ-01554,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0237,AVJ-01570,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0238,AVJ-01573,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0239,AVJ-01582,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0240,AVJ-01586,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0241,AVJ-01598,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0242,AVJ-01603,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0243,AVJ-01608,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0244,AVJ-01612,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0245,AVJ-01621,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0246,AVJ-01622,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0247,AVJ-01623,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0248,AVJ-01625,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0249,AVJ-01626,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0250,AVJ-01627,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0251,AVJ-01636,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0252,AVJ-01647,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0253,AVJ-01648,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0254,AVJ-01649,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0255,AVJ-01651,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0256,AVJ-01652,Human intervention,Low sensor confidence,Low,Remote operator review,Journey completed
+EVT-0257,AVJ-01653,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0258,AVJ-01655,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0259,AVJ-01657,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0260,AVJ-01658,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0261,AVJ-01665,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0262,AVJ-01671,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0263,AVJ-01690,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0264,AVJ-01695,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0265,AVJ-01700,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0266,AVJ-01707,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0267,AVJ-01708,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0268,AVJ-01717,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0269,AVJ-01721,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0270,AVJ-01727,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0271,AVJ-01731,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0272,AVJ-01738,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0273,AVJ-01775,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0274,AVJ-01786,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0275,AVJ-01787,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0276,AVJ-01793,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0277,AVJ-01797,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0278,AVJ-01798,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0279,AVJ-01806,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0280,AVJ-01815,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0281,AVJ-01816,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0282,AVJ-01826,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0283,AVJ-01843,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0284,AVJ-01854,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0285,AVJ-01856,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0286,AVJ-01864,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0287,AVJ-01880,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0288,AVJ-01886,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0289,AVJ-01892,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0290,AVJ-01897,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0291,AVJ-01922,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0292,AVJ-01928,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0293,AVJ-01952,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0294,AVJ-01967,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0295,AVJ-01968,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0296,AVJ-01972,Safety incident,Safety incident,High,Journey terminated,Journey completed
+EVT-0297,AVJ-01975,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0298,AVJ-01981,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0299,AVJ-01985,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0300,AVJ-01991,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0301,AVJ-01992,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0302,AVJ-01993,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0303,AVJ-01999,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0304,AVJ-02000,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0305,AVJ-02002,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0306,AVJ-02006,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0307,AVJ-02015,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0308,AVJ-02017,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0309,AVJ-02019,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0310,AVJ-02028,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0311,AVJ-02030,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0312,AVJ-02031,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0313,AVJ-02041,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0314,AVJ-02051,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0315,AVJ-02057,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0316,AVJ-02061,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0317,AVJ-02064,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0318,AVJ-02080,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0319,AVJ-02084,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0320,AVJ-02091,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0321,AVJ-02106,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0322,AVJ-02129,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0323,AVJ-02135,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0324,AVJ-02144,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0325,AVJ-02173,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0326,AVJ-02179,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0327,AVJ-02192,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0328,AVJ-02195,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0329,AVJ-02199,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0330,AVJ-02202,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0331,AVJ-02213,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0332,AVJ-02230,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0333,AVJ-02235,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0334,AVJ-02242,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0335,AVJ-02251,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0336,AVJ-02258,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0337,AVJ-02261,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0338,AVJ-02270,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0339,AVJ-02292,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0340,AVJ-02295,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0341,AVJ-02297,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0342,AVJ-02298,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0343,AVJ-02300,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0344,AVJ-02311,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0345,AVJ-02313,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0346,AVJ-02314,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0347,AVJ-02316,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0348,AVJ-02322,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0349,AVJ-02327,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0350,AVJ-02328,Safety incident,Safety incident,High,Journey terminated,Journey not completed
+EVT-0351,AVJ-02333,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0352,AVJ-02340,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0353,AVJ-02347,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0354,AVJ-02350,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0355,AVJ-02368,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0356,AVJ-02373,Human intervention,Low sensor confidence,Medium,Manual control requested,Journey completed
+EVT-0357,AVJ-02394,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0358,AVJ-02395,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0359,AVJ-02397,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0360,AVJ-02405,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0361,AVJ-02417,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0362,AVJ-02429,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0363,AVJ-02431,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0364,AVJ-02432,Human intervention,Low sensor confidence,Low,Manual control requested,Journey completed
+EVT-0365,AVJ-02440,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0366,AVJ-02441,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0367,AVJ-02444,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0368,AVJ-02451,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0369,AVJ-02465,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0370,AVJ-02468,Human intervention,Unexpected obstacle,Low,Remote operator review,Journey completed
+EVT-0371,AVJ-02473,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey not completed
+EVT-0372,AVJ-02476,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
+EVT-0373,AVJ-02482,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0374,AVJ-02487,Emergency stop,Emergency stop,Medium,Safe stop and system check,Journey completed
+EVT-0375,AVJ-02494,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0376,AVJ-02495,Human intervention,Precautionary intervention,Low,Manual control requested,Journey completed
+EVT-0377,AVJ-02496,Human intervention,Complex traffic,Low,Manual control requested,Journey completed
